@@ -3,7 +3,7 @@ body {
     background: linear-gradient(135deg, #FFA500 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #008000 66.66%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100vh; /* Adjust as needed */
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@ body {
     display: flex;
 }
 
-.flex{
+.cont2{
     display: flex;
 }
 
@@ -79,7 +79,7 @@ ol {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 774px) {
     .headline h1 {
         font-size: 20px;
     }
@@ -95,8 +95,13 @@ ol {
 
     .intro, .Backstory, .Works, .aqs, .ad, .sources {
         margin: 10px;
+        display: block;
         padding: 15px;
         width: 90%; /* Adjusted width to fit smaller screens */
+    }
+
+    .cont2{
+        display: block;
     }
 
     h2 {
@@ -105,5 +110,11 @@ ol {
 
     p {
         font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 775px) {
+    .cont2{
+        display: flex;
     }
 }
