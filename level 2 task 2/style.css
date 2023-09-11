@@ -1,0 +1,72 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    max-height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+    /* Add your hero section styles here */
+}
+
+/* Style the featured destinations section */
+.featured-destinations {
+    /* Add your featured destinations styles here */
+}
+
+/* Style the search results section */
+.search-results {
+    /* Add your search results styles here */
+}
+
+/* Style the booking details page */
+.booking-details {
+    /* Add your booking details styles here */
+}
+
+/* Style the booking process steps */
+.booking-process {
+    /* Add your booking process styles here */
+}
+
+/* Style the user profile page */
+.user-profile-page {
+    /* Add your user profile page styles here */
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Add your footer styles here */
+
