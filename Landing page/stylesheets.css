@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #b0b0b0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(189, 189, 189);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 141, 2);
+    border-radius: 5px;
+  }
+body{
+    width: auto;
+    color : blanchedalmond;
+    font-family: "Sofia", sans-serif;
+}
+header {
+    background: linear-gradient(to right, orange, palevioletred);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 10px;
+}
+.sm{
+    border: 0px 1px solid white;
+    margin-left: 15%;
+}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: beige;
+  }
+  
+  .svg-icon circle {
+    stroke: beige;
+    stroke-width: 1;
+  }
+  .cont{
+    font-size: 10px;
+}
+
+.botn{
+    margin-right: 15%;
+}
+.botn button{
+    background-color: rgba(0, 0, 0, 0); 
+    border-radius: 20px;
+    color: beige;
+    border: 2px solid white; 
+    padding: 5px; 
+    cursor: pointer;
+}
+#logo{
+    display:inline;
+    height: 50px;
+    margin-bottom: -15px;
+    border-radius: 5cm;
+}
+.nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 12px;
+    margin: 0% 15%;
+}
+
+.item {
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+#buy {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    display: inline-block;
+    background-color: orange;
+}
+
+#buy:hover {
+    background-color: orangered;
+}
+
+
+.hv :hover{
+    background-color:palevioletred;
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner h3{
+    font-size: 30px; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.banner p{
+    text-align: left;
+    color: rgb(94, 93, 91);
+    font-size: 20px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.banner h1{
+    font-size: 50px;
+}
+.banner::before {
+    background-color: rgba(0, 0, 0,1);
+}
+.banner {
+    background-image: url(./images/banner_image.jpg);
+    display:flex;
+    opacity:80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(84, 84, 84); 
+}
+.poster{
+    padding-top: 15%;
+}
+.read{
+border: 3px solid white;
+color:beige;
+padding:5px;
+background: linear-gradient(to right, orange, palevioletred);
+border-radius: 15px;
+}
+
+.req{
+    background-color: rgba(0, 0, 0, 0); 
+    color: rgb(255, 255, 255); 
+    border: 3px solid white;
+    padding: 5px; 
+    cursor: pointer;
+}
