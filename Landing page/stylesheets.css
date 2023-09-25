@@ -29,20 +29,17 @@ body{
     font-family: "Sofia", sans-serif;
 }
 header {
-    background: linear-gradient(to right, orange, palevioletred);
+    background: linear-gradient(to right, orange, rgb(209, 0, 209));
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    width: 100%;
+    width: 100vw;
     padding: 10px;
 }
 .sm{
     border: 0px 1px solid white;
     margin-left: 15%;
 }
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
 
 .svg-icon {
     width: 1em;
@@ -80,25 +77,26 @@ SVG Icons - svgicons.sparkk.fr
     margin-bottom: -15px;
     border-radius: 5cm;
 }
+
 .nav {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     font-size: 12px;
-    margin: 0% 15%;
-}
-
-.item {
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
+    width: 100vw;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-align: center;
     padding: 10px;
     color: black;
-}
-
-#buy {
+  }
+  
+  #buy {
     width: 100%;
     text-decoration: none;
     text-align: center;
@@ -106,60 +104,230 @@ SVG Icons - svgicons.sparkk.fr
     color: black;
     display: inline-block;
     background-color: orange;
-}
-
-#buy:hover {
+    margin: 0 auto;
+  }
+  
+  #buy:hover {
     background-color: orangered;
-}
+  }
 
-
-.hv :hover{
-    background-color:palevioletred;
-    color: beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.banner h3{
-    font-size: 30px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  .hamburger{
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    display: none;
+    background-color: orange;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .hv :hover{
+      background-color:rgb(209, 0, 209);
+      color: beige;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     
-}
-.banner p{
-    text-align: left;
-    color: rgb(94, 93, 91);
-    font-size: 20px; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    .banner h3{
+        font-size: 30px; 
+        margin-left: 50px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        
+    }
+    .banner p{
+        text-align: left;
+        color: rgb(255 0 118);
+        font-size: 20px; 
+        margin-left: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    .banner h1{
+        font-size: 50px;
+        margin-left: 50px;
 }
 
-.banner h1{
-    font-size: 50px;
-}
-.banner::before {
-    background-color: rgba(0, 0, 0,1);
-}
 .banner {
-    background-image: url(./images/banner_image.jpg);
+    background-image: url(./images/banimg.jpg);
     display:flex;
-    opacity:80%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(84, 84, 84); 
+    color: rgb(25 0 255);
+    height:75vh;
+    width: 100vw;
 }
+
 .poster{
     padding-top: 15%;
 }
-.read{
-border: 3px solid white;
-color:beige;
-padding:5px;
-background: linear-gradient(to right, orange, palevioletred);
-border-radius: 15px;
+
+.read {
+    border: 3px solid white;
+    width: 110px;
+    color: beige;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 50px;
+    background: linear-gradient(to right, orange, rgb(209, 0, 209));
+    border-radius: 30px;
 }
 
 .req{
     background-color: rgba(0, 0, 0, 0); 
-    color: rgb(255, 255, 255); 
-    border: 3px solid white;
+    color: rgb(25 0 255); 
+    border: 3px solid rgb(25 0 255);
+    border-radius: 50px;
     padding: 5px; 
     cursor: pointer;
 }
+
+.avbl{
+    background: linear-gradient(to right ,orange , rgb(209, 0, 209));
+    padding: 40px;
+    color: antiquewhite;
+}
+
+.avbl h3{
+    font-size: 20px;
+}
+
+.au{
+    background: url(./images/au_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.au h1{
+    color: black;
+    margin: 50px;
+}
+
+.au h3{
+    color: black;
+    margin: 50px;
+}
+
+.au p{
+    color: rgb(60, 60, 60);
+    margin: 50px;
+}
+
+.au img{
+    width: 350px;
+    margin: 50px;
+}
+
+.our_services{
+    color: black;
+    background: url(./images/au_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our_services img{
+    width: 18vw;
+    height: 18vh;
+}
+
+.tag {
+    display: inline-block;
+    position: relative;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom: 6px solid rgba(60, 60, 60, 0.082);
+    border-right: 6px solid rgba(60, 60, 60, 0.082);
+    width: 15vw;
+}
+
+.tag h3{
+    padding-right: 1vw;
+    font-size: 80%;
+}
+
+.ball{
+    background: linear-gradient(to right, orange , rgb(209, 0, 209));
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+
+    width: 20%;
+}
+
+
+
+    @media (max-width: 768px) {
+      .nav {
+      display: flex;
+      flex-direction: column;
+      }
+    
+      .item {
+        width: 100vw;
+      }
+    
+      .item-img{
+          display: inline;
+          width: fit-content;
+      }
+    
+      #buy {
+        width: 100vw;
+        display: none;
+      }
+    
+      .hamburger{
+          display:flex;
+          width: 100vw;
+      }
+    
+      #hamburger{
+          width: 100vw;
+          text-decoration: none;
+          padding: 10px;
+          border: none;
+          font-size: 20px;
+          color: black;
+          background-color: orange;
+          margin: 0 auto;
+      }
+    
+      .hide{
+          display: none;
+      }
+    
+      .banner h3{
+          margin-top: 106px;
+      }
+    
+      .banner p{
+          width: 70vw;
+      }
+
+      .banner{
+        height:90vh;
+      }
+
+      .au img{
+        display: none;
+      }
+
+      .tag{
+        width:50vw;
+      }
+
+      .our_services img{
+        width:70vw;
+      }
+
+      .our_services {
+        display: flex;
+        justify-content: center;
+        width:100vw;
+        align-items: center;
+      }
+
+    }

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorem ipsum Corporation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets.css">
 </head>
-<link rel="stylesheet" href="stylesheets.css">
 <body>
     <header class="headcontainer">
         <div class="sm">
@@ -33,14 +34,17 @@
         </div>
     </header>
     <div class="nav">
-        <a href="index.html" class="item"><img src="./images/logo.svg" alt="LANDING PAGE" id="logo"></a>
-        <div class="item hv" id="item-1"><a href="index.html" class="item">HOME</a></div>
-        <div class="item hv"><a href="#" class="item">Blog</a></div>
-        <div class="item hv"><a href="#" class="item">Page</a></div>
-        <div class="item hv"><a href="#" class="item">Services</a></div>
-        <div class="item hv"><a href="#" class="item">Testimonials</a></div>
-        <div class="item hv"><a href="#" class="item">Contact</a></div>
-        <div><a id="buy" href="#" class="item">BuyNow</a></div>
+        <a href="index.html" class="item-img pb-2 pt-2 flex-row"><img src="./images/logo.svg" alt="LANDING PAGE" id="logo"></a>
+        <div class="flex-row hamburger"><button id="hamburger" onclick="showNav()" title="Open Nav Options">
+            <svg width="40px" height="40px" viewBox="0 0 28.00 28.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00028"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="hsla(0,0%,80%,1)" stroke-width="0.11200000000000002"></g><g id="SVGRepo_iconCarrier"><path d="M3 7C3 6.44771 3.44772 6 4 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H4C3.44772 8 3 7.55229 3 7Z" fill="hsla(0,0%,0%,1)"></path><path d="M3 14C3 13.4477 3.44772 13 4 13H24C24.5523 13 25 13.4477 25 14C25 14.5523 24.5523 15 24 15H4C3.44772 15 3 14.5523 3 14Z" fill="hsla(0,0%,0%,1)"></path><path d="M4 20C3.44772 20 3 20.4477 3 21C3 21.5523 3.44772 22 4 22H24C24.5523 22 25 21.5523 25 21C25 20.4477 24.5523 20 24 20H4Z" fill="hsla(0,0%,0%,1)"></path></g></svg>
+        </button></div>
+        <div class="item hv hide" id="item-1"><a href="index.html" class="item">HOME</a></div>
+        <div class="item hv hide"><a href="#" class="item">Blog</a></div>
+        <div class="item hv hide"><a href="#" class="item">Page</a></div>
+        <div class="item hv hide"><a href="#" class="item">Services</a></div>
+        <div class="item hv hide"><a href="#" class="item">Testimonials</a></div>
+        <div class="item hv hide"><a href="#" class="item">Contact</a></div>
+        <div><a id="buy" href="#" class="item hide">BuyNow</a></div>
     </div>
 
  <div class="banner">
@@ -57,13 +61,130 @@
         <button class="read">Read More</button> <button class="req">Request a Consult</button>
     </div>
  </div>
- <div class="avbl"></div>
- <div class="au"></div>
- <div class="our_services"></div>
 
 
+ <div class="avbl">
+    <div class="row">
+
+        <div class="col-md-4 mb-2 mt-2 text-center">
+            <h3>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" fill="hsla(240,8%,12%,1)" stroke="hsla(0,0%,100%,1)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="hsla(0,0%,51%,1)" d="M10.243,11.992c-3.463-0.443-6.97,0.737-9.439,3.206c-0.128,0.128-0.253,0.26-0.374,0.392 c-0.472,0.519-0.563,1.248-0.233,1.859c0.334,0.618,1.004,0.945,1.703,0.833c2.389-0.383,4.799,0.086,6.857,1.299 c-0.978,1.159-1.669,2.526-1.976,4.012c-0.093,0.45,0.048,0.916,0.379,1.247c0.263,0.264,0.613,0.406,0.972,0.406 c0.091,0,0.184-0.009,0.275-0.028c1.487-0.308,2.854-0.999,4.012-1.976c1.214,2.059,1.681,4.469,1.3,6.857 c-0.112,0.701,0.215,1.37,0.833,1.704C14.794,31.936,15.057,32,15.318,32c0.392,0,0.78-0.146,1.091-0.43 c0.133-0.12,0.263-0.245,0.392-0.373c2.315-2.316,3.608-5.875,3.136-9.388c1.412-0.973,2.749-2.074,3.967-3.292 c4.526-4.527,7.399-10.519,8.087-16.872c0.049-0.445-0.108-0.886-0.43-1.207c-0.321-0.321-0.761-0.475-1.207-0.43 C24.001,0.697,18.009,3.57,13.482,8.097C12.284,9.295,11.202,10.609,10.243,11.992z M30.462,1.003 c0.139-0.02,0.286,0.036,0.392,0.143s0.158,0.249,0.143,0.393c-0.674,6.216-3.371,11.843-7.8,16.272 c-1.068,1.068-2.24,2.03-3.465,2.904c-0.438-1.802-1.365-3.557-2.893-5.085c-0.195-0.195-0.512-0.195-0.707,0s-0.195,0.512,0,0.707 c3.469,3.469,4.403,9.712-0.038,14.152c-0.117,0.117-0.236,0.23-0.357,0.341c-0.304,0.279-0.621,0.143-0.711,0.094 c-0.19-0.103-0.374-0.332-0.321-0.666c0.451-2.824-0.168-5.684-1.744-8.052c-0.009-0.014-0.024-0.021-0.034-0.034 c-0.009-0.011-0.012-0.024-0.022-0.034c-0.012-0.012-0.028-0.017-0.04-0.028c-0.03-0.025-0.06-0.047-0.094-0.065 c-0.023-0.012-0.045-0.021-0.07-0.029c-0.038-0.013-0.075-0.021-0.115-0.024c-0.023-0.002-0.046-0.002-0.069,0 c-0.04,0.002-0.078,0.009-0.117,0.021c-0.025,0.008-0.047,0.018-0.071,0.029c-0.02,0.01-0.042,0.012-0.061,0.025 c-0.016,0.01-0.024,0.026-0.038,0.038c-0.01,0.008-0.023,0.011-0.032,0.021c-1.108,1.071-2.49,1.803-3.995,2.114 c-0.177,0.034-0.293-0.062-0.336-0.106c-0.044-0.044-0.142-0.165-0.106-0.337c0.311-1.504,1.042-2.886,2.114-3.995 c0.013-0.013,0.017-0.03,0.028-0.044c0.008-0.01,0.021-0.015,0.029-0.026c0.011-0.017,0.013-0.036,0.022-0.053 c0.015-0.029,0.027-0.058,0.036-0.089c0.009-0.032,0.014-0.063,0.017-0.096c0.003-0.031,0.003-0.061-0.001-0.093 c-0.003-0.032-0.01-0.062-0.02-0.093c-0.009-0.03-0.021-0.058-0.036-0.087c-0.016-0.029-0.035-0.055-0.056-0.082 c-0.012-0.014-0.017-0.032-0.031-0.045c-0.012-0.011-0.027-0.015-0.039-0.025c-0.012-0.01-0.019-0.023-0.032-0.032 c-2.367-1.574-5.227-2.194-8.05-1.744c-0.336,0.058-0.563-0.13-0.666-0.32c-0.048-0.09-0.185-0.405,0.093-0.711 c0.11-0.121,0.223-0.239,0.34-0.356c2.313-2.314,5.623-3.402,8.863-2.903C10.378,13.004,10.382,13,10.387,13 c0.003,0,0.007,0,0.01,0c0.008,0,0.015,0.003,0.022,0.004c0.056,0.006,0.112,0.008,0.167-0.005 c0.025-0.006,0.047-0.018,0.071-0.027c0.035-0.014,0.07-0.025,0.101-0.047c0.03-0.021,0.052-0.048,0.076-0.075 c0.017-0.019,0.039-0.031,0.054-0.053c0.964-1.424,2.076-2.768,3.302-3.994C18.556,4.437,24.334,1.667,30.462,1.003z"></path> <path fill="hsla(0,0%,51%,1)" d="M22.14,12.859c0.801,0,1.555-0.312,2.122-0.878c1.169-1.17,1.169-3.073,0-4.243 c-1.134-1.133-3.11-1.133-4.243,0c-1.17,1.17-1.17,3.073,0,4.243C20.585,12.548,21.339,12.859,22.14,12.859z M20.726,8.445 c0.378-0.378,0.88-0.586,1.414-0.586s1.037,0.208,1.415,0.586c0.779,0.78,0.779,2.049,0,2.829c-0.756,0.754-2.074,0.754-2.829,0 C19.946,10.494,19.946,9.226,20.726,8.445z"></path> <path fill="hsla(0,0%,51%,1)" d="M5.442,25.851l-1.659,1.66c-0.195,0.195-0.195,0.512,0,0.707c0.098,0.098,0.226,0.146,0.354,0.146 s0.256-0.049,0.354-0.146l1.659-1.66c0.195-0.195,0.195-0.512,0-0.707S5.637,25.655,5.442,25.851z"></path> <path fill="hsla(0,0%,51%,1)" d="M5.438,20.862l-4.152,4.151c-0.195,0.195-0.195,0.512,0,0.707c0.098,0.098,0.226,0.146,0.354,0.146 s0.256-0.049,0.354-0.146l4.152-4.151c0.195-0.195,0.195-0.512,0-0.707S5.633,20.667,5.438,20.862z"></path> <path fill="hsla(0,0%,51%,1)" d="M6.172,30.606c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146l4.152-4.151 c0.195-0.195,0.195-0.512,0-0.707s-0.512-0.195-0.707,0l-4.152,4.151C5.977,30.095,5.977,30.411,6.172,30.606z"></path> </g> </g></svg>
+                Launch Business</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, nam!</p>
+
+        </div>
+
+        <div class="col-md-4 mb-2 mt-2 text-center">
+            <h3>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 37 32" enable-background="new 0 0 37 32" xml:space="preserve" fill="hsla(240,8%,12%,1)" stroke="hsla(0,0%,100%,1)" stroke-width="2.553"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="hsla(0,0%,51%,1)" d="M0.5,29.5C0.776,29.5,1,29.276,1,29v-4h1v3c0,2.206,1.794,4,4,4s4-1.794,4-4v-7c0-2.206-1.794-4-4-4 s-4,1.794-4,4v3H1v-5.5C1,9.034,9.257,1.034,19.045,1C28.558,1.034,36,8.708,36,18.5V24h-1v-3c0-2.206-1.794-4-4-4s-4,1.794-4,4v7 c0,2.206,1.794,4,4,4s4-1.794,4-4v-3h1v3c0,0.276,0.224,0.5,0.5,0.5S37,28.276,37,28v-9.5C37,8.177,29.164,0,19.132,0 c-0.008,0-0.017,0-0.024,0h-0.125c-0.008,0-0.017,0-0.024,0C8.666,0,0,8.521,0,18.5V29C0,29.276,0.224,29.5,0.5,29.5z M3,21 c0-1.654,1.346-3,3-3s3,1.346,3,3v7c0,1.654-1.346,3-3,3s-3-1.346-3-3V21z M34,28c0,1.654-1.346,3-3,3s-3-1.346-3-3v-7 c0-1.654,1.346-3,3-3s3,1.346,3,3V28z"></path> </g> </g></svg>
+                Online Support Team</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, nam!</p>
+
+        </div>
+
+        <div class="col-md-4 mb-2 mt-2 text-center">
+            <h3>
+                <svg width="30px" height="30px" viewBox="-2.88 -2.88 29.76 29.76" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="1.296"> <path d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="hsla(0,0%,75%,1)" stroke-width="1.9440000000000002" stroke-linecap="round" stroke-linejoin="round"></path> </g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="hsla(0,0%,75%,1)" stroke-width="1.9440000000000002" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                Time Management</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, nam!</p>
+
+        </div>
+
+
+    </div>
+ </div>
+
+
+ <div class="au mt-5">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h1>
+                ABOUT US
+            </h1>
+
+            <h3>
+                15 years, we passionate about better results for our clients
+            </h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo doloremque earum dignissimos, unde consectetur cupiditate ipsam voluptatem quibusdam nulla quaerat, facere inventore dolorum ab debitis hic molestias? Expedita deserunt velit sit. Voluptas eius quaerat corporis ullam amet praesentium explicabo rem sit, cupiditate dolorum repudiandae voluptate natus quo dicta odio.</p>
+
+            <button class="read">Read More</button>
+
+        </div>
+
+        <div class="col-md-6 align-items-center">
+            <img src="./images/au_guy.png" alt="Happy Guy" class="m-5">
+        </div>
+
+    </div>
+
+ </div>
+ <div class="our_services mt-5">
+
+    <div class="row m-3">
+
+        <h1>OUR SERVICES</h1>
+
+        <div class="col-md-4 mt-5">
+
+            <div>
+                <img src="https://media.gettyimages.com/id/1266126269/photo/designer-development-ux-graphic-prototype-application.jpg?s=612x612&w=0&k=20&c=NMuMXDOveUTPO_FjzpWPzH6Abj9HhbUJl1L_9kX13po=" alt="UI/UX">
+            </div>
+
+            <div class="tag text-center">
+
+                <h3>
+                    <svg class="ball" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 35 32" enable-background="new 0 0 35 32" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path fill="hsla(0,0%,51%,1)" d="M9.348,9.765l14.143-8.757c0.087-0.053,0.216-0.106,0.314-0.05C23.895,1.009,24,1.164,24,1.435v29.043 c0,0.273-0.108,0.429-0.201,0.479c-0.106,0.056-0.236-0.002-0.324-0.061l-13.253-8.891c-0.229-0.155-0.54-0.093-0.693,0.137 c-0.154,0.229-0.093,0.54,0.137,0.693l13.255,8.892c0.253,0.168,0.522,0.253,0.785,0.253c0.196,0,0.388-0.047,0.567-0.143 C24.728,31.593,25,31.085,25,30.479V1.435c0-0.597-0.264-1.101-0.705-1.349c-0.401-0.225-0.884-0.201-1.328,0.069L8.821,8.914 C8.586,9.06,8.514,9.368,8.659,9.603C8.805,9.837,9.113,9.91,9.348,9.765z"></path> <path fill="hsla(0,0%,51%,1)" d="M7,21.5v-10C7,10.673,6.327,10,5.5,10h-4C0.673,10,0,10.673,0,11.5v10C0,22.327,0.673,23,1.5,23h4 C6.327,23,7,22.327,7,21.5z M1,21.5v-10C1,11.224,1.224,11,1.5,11h4C5.776,11,6,11.224,6,11.5v10C6,21.776,5.776,22,5.5,22h-4 C1.224,22,1,21.776,1,21.5z"></path> <path fill="hsla(0,0%,51%,1)" d="M29,9h-1c-0.276,0-0.5,0.224-0.5,0.5S27.724,10,28,10h1c3.038,0,5,2.202,5,5.611v0.138 C34,19.312,31.851,22,29,22h-1c-0.276,0-0.5,0.224-0.5,0.5S27.724,23,28,23h1c3.42,0,6-3.118,6-7.251v-0.138 C35,11.657,32.589,9,29,9z"></path> <path fill="hsla(0,0%,51%,1)" d="M28.571,19H28c-0.276,0-0.5,0.224-0.5,0.5S27.724,20,28,20h0.571C30.59,20,32,18.363,32,15.964 C32,13.63,30.59,12,28.571,12H28c-0.276,0-0.5,0.224-0.5,0.5S27.724,13,28,13h0.571C30.364,13,31,14.597,31,16.018 C31,17.502,30.249,19,28.571,19z"></path> </g> </g></svg>
+                    USER EXPERIENCE
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mt-5">
+
+            <div>
+                <img src=" https://res.cloudinary.com/hnpb47ejt/image/upload/v1539382344/qkydi4xdpfyplvfhvmqn.jpg" alt="creative">
+            </div>
+
+            <div class="tag text-center">
+
+                <h3>
+                    <svg class="ball" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="hsla(0,0%,100%,1)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 3V7M15 3V6M4 10H20M12 21C10.2337 21 8.91561 19.3737 9.28133 17.6457L9.34332 17.3528C9.56076 16.3254 9.04388 15.2832 8.09439 14.8346L5.9897 13.8401C4.77487 13.2661 4 12.043 4 10.6994V4.63149C4 3.73044 4.73044 3 5.63149 3H18.3685C19.2696 3 20 3.73044 20 4.63149V10.6994C20 12.043 19.2251 13.2661 18.0103 13.8401L15.9056 14.8346C14.9561 15.2832 14.4392 16.3254 14.6567 17.3528L14.7187 17.6457C15.0844 19.3737 13.7663 21 12 21Z" stroke="hsla(0,0%,75%,1)" stroke-width="1.512" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    CREATIVE DESIGN
+                </h3>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mt-5">
+
+            <div>
+                <img src="https://www.awdltd.co.uk/images_CMS/service/2/5hd_retina_ready1.jpg" alt="resolutuion">
+            </div>
+
+            <div class="tag text-center">
+
+                <h3>
+                    <svg class="ball" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#ffffff" stroke-width="4.8"> <path d="M3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14M17 14C17 16.7614 14.7614 19 12 19C9.23858 19 7 16.7614 7 14C7 11.2386 9.23858 9 12 9C14.7614 9 17 11.2386 17 14Z" stroke="hsla(0,0%,75%,1)" stroke-width="1.008" stroke-linecap="round" stroke-linejoin="round"></path> </g><g id="SVGRepo_iconCarrier"> <path d="M3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14M17 14C17 16.7614 14.7614 19 12 19C9.23858 19 7 16.7614 7 14C7 11.2386 9.23858 9 12 9C14.7614 9 17 11.2386 17 14Z" stroke="hsla(0,0%,75%,1)" stroke-width="1.008" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    RETINA READY
+                </h3>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+</div>
+
+<script src="./script.js"></script>
 </body>
-<footer>
-    
-</footer>
 </html>
